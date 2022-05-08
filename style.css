@@ -1,0 +1,148 @@
+:root{
+    --mainColor: #eaeaea;
+    --secondColor: #fff;
+
+    --borderColor:#c1c1c1;
+
+    --mainText: black;
+    --secondText: #4b5156;
+
+    --themedotBorder: #24292e;
+}
+
+.navbar.sticky{
+    background: #171717;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: var(--mainText);
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Wendy One', sans-serif;
+    font-weight: 500;
+}
+
+p,li, span, label, input, textarea{
+    color: var(--mainText);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main{
+    background: url(img/black.jpg);
+    background-size: cover;
+    background-position: top center;
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.main::after{
+    content: '';
+    position:absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .2;
+    z-index: -1;
+}
+
+.main h1{
+    display: block;
+    position: relative;
+    width: fit-content;
+    color:white
+}
+
+#about, #project,#certificate, footer{
+    padding-bottom: 65px;
+}
+
+#about img{
+    position: relative;
+    -webkit-box-shadow: 3px 10px 27px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 10px 27px -9px rgba(0,0,0,0.75);
+    box-shadow: 3px 10px 27px -9px rgba(0,0,0,0.75);
+}
+
+#about img::after{
+    content: '';
+    position: absolute;
+    left: -33px;
+    top: 19px;
+    height: 98%;
+    width: 98%;
+    border: 7px solid #171717;
+
+}
+
+section{
+    padding-top: 5rem;
+}
+
+ul{
+    list-style: none;
+}
+
+h1 { font-size: 56px;}
+h2 { font-size: 36px;}
+h3 { font-size: 28px;}
+h4 { font-size: 24px;}
+h5 { font-size: 20px;}
+h6 { font-size: 16px;}
+
+a{
+    text-decoration: none;
+    color: #17a2b8
+}
+
+footer h1,footer h2,footer p,footer h3{
+    color: white;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.social{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.social li{
+    margin: 0 10px;
+}
+
+.social a i{
+    font-size: 1.5rem;
+}
+
+.footer-bottom{
+    width: 100vw;
+    text-align: center;
+}
+
+.footer-bottom p{
+    font-size: 14px;
+}
