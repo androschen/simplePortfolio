@@ -57,9 +57,30 @@ p,li, span, label, input, textarea{
 .main h1{
     display: block;
     position: relative;
-    width: fit-content;
-    color:white
+    width: 100%;
+    color:white;
+    font-size: 50px;
 }
+
+.type{
+    display: block;
+    position: relative;
+    width: 100%;
+    color:white;
+    font-size: 56px;
+    line-height: 50px;
+    height: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Wendy One', sans-serif;
+    font-weight: 500;
+}
+
+.desc{
+    display: block;
+    position: absolute;
+    font-size : 24px;
+}
+
 
 #about, #project,#certificate, footer{
     padding-bottom: 65px;
@@ -91,12 +112,12 @@ ul{
     list-style: none;
 }
 
-h1 { font-size: 56px;}
+/* h1 { font-size: 56px;}
 h2 { font-size: 36px;}
 h3 { font-size: 28px;}
 h4 { font-size: 24px;}
 h5 { font-size: 20px;}
-h6 { font-size: 16px;}
+h6 { font-size: 16px;} */
 
 a{
     text-decoration: none;
