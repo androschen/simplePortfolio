@@ -44,11 +44,13 @@ p,li, span, label, input, textarea{
 
 .main::after{
     content: '';
-    position:absolute;
+    position: absolute;
     left: 0;
     top: 0;
-    height: 100%;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-height: 50vh;
     background-color: black;
     opacity: .2;
     z-index: -1;
@@ -63,16 +65,37 @@ p,li, span, label, input, textarea{
 }
 
 .type{
-    display: block;
+    display: inline;
     position: relative;
     width: 100%;
+    line-height: 50px;
     color:white;
     font-size: 56px;
-    line-height: 50px;
-    height: 30px;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Wendy One', sans-serif;
     font-weight: 500;
+}
+
+.typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-webkit-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-moz-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 .desc{
@@ -160,10 +183,60 @@ footer h1,footer h2,footer p,footer h3{
 }
 
 .footer-bottom{
-    width: 100vw;
+    width: 100%;
     text-align: center;
 }
 
 .footer-bottom p{
     font-size: 14px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .main h1{
+        display: block;
+        position: relative;
+        width: 100%;
+        color:white;
+        font-size: 24px;
+    }
+
+    .type{
+        display: inline;
+        position: relative;
+        width: 100%;
+        line-height: 50px;
+        color:white;
+        font-size: 27px;
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Wendy One', sans-serif;
+        font-weight: 500;
+    }
+    
+    .typed-cursor {
+        opacity: 1;
+        -webkit-animation: blink 0.7s infinite;
+        -moz-animation: blink 0.7s infinite;
+        animation: blink 0.7s infinite;
+    }
+    @keyframes blink {
+        0% { opacity: 1; }
+        50% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+    @-webkit-keyframes blink {
+        0% { opacity: 1; }
+        50% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+    @-moz-keyframes blink {
+        0% { opacity: 1; }
+        50% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+    .desc{
+        display: block;
+        position: absolute;
+        font-size : 16px;
+    }
 }
