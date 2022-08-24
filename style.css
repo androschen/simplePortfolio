@@ -37,7 +37,6 @@ p,li, span, label, input, textarea{
     background-position: top center;
     height: 100vh;
     padding: 50px;
-    min-width: 500px;
     position: relative;
     z-index: 1;
 }
