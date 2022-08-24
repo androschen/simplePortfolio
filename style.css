@@ -126,6 +126,7 @@ p,li, span, label, input, textarea{
 
 section{
     padding-top: 5rem;
+    min-width: 500px;
 }
 
 ul{
